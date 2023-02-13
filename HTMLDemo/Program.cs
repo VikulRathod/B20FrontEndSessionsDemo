@@ -12,7 +12,11 @@ if (!app.Environment.IsDevelopment())
 }
 
 
-app.UseDefaultFiles();
+// app.UseDefaultFiles(); // index.htm/ index.html/ default.htm/ default.html
+FileServerOptions options = new FileServerOptions();
+options.DefaultFilesOptions.DefaultFileNames = new[] { "homea.html" };
+app.UseFileServer(options);
+
 
 app.UseStaticFiles();
 
