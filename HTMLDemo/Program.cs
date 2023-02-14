@@ -14,7 +14,8 @@ if (!app.Environment.IsDevelopment())
 
 // app.UseDefaultFiles(); // index.htm/ index.html/ default.htm/ default.html
 FileServerOptions options = new FileServerOptions();
-options.DefaultFilesOptions.DefaultFileNames = new[] { "homea.html" };
+options.DefaultFilesOptions.DefaultFileNames = 
+    new[] { "login.html" };
 app.UseFileServer(options);
 
 
