@@ -1,0 +1,112 @@
+﻿body {
+    /*background-color: purple;*/
+    /*background-color: #ff00dc;*/
+    /*background-color: rgb(222, 28, 28);*/
+    /*background-color: #ffffff;*/
+}
+
+h1 {
+    background-color: yellow;
+}
+
+/*div p {
+    font-weight: bold;
+    color: red;
+}*/
+
+/*div > p {
+    font-weight: bold;
+    color: red;
+}*/
+
+/*ol li {
+    font-weight: bold;
+    color: red;
+}*/
+
+/*ol li:first-child {
+    font-weight: bold;
+    color: red;
+}*/
+
+/*ol li:last-child {
+    font-weight: bold;
+    color: red;
+}*/
+
+/*ol li:nth-child(2n+1) {
+    font-weight: bold;
+    color: red;
+}
+
+ol li:nth-child(2n+2) {
+    font-weight: bold;
+    color: yellow;
+}
+
+a:link {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+    font-weight: bold;
+}
+
+a:visited {
+    font-weight: 100;
+}
+
+p::selection {
+    color: red;
+}*/
+
+#parentDiv {
+    height: 650px;
+    width: 250px;
+    background-color: lightgreen;
+    border: 5px solid red;
+    border-radius: 10px;
+}
+
+#innerDiv {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    /*border-left-color:red;
+    border-left-width:5px;
+    border-left-style:dotted;*/
+    /*border-left: 5px dashed green;
+    border-right: 5px dashed green;
+    border-top: 5px dashed red;
+    border-bottom: 5px dashed red;*/
+    border: 5px solid black;
+    border-radius: 10px;
+    opacity:1;
+}
+
+#innerDiv1 {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border: 5px solid black;
+    border-radius: 10px;
+    /*margin-left: 25px;
+    margin-top: 25px;*/
+    /*margin:25px;*/
+    /*margin: 25px 10px;*/
+    /*    margin: 25px 0px 0px 25px;*/
+    /*padding-left:25px;
+    padding-top:10px;*/
+    /*padding:10px 0px 0px 25px;*/
+    padding: 0px;
+    opacity: 0.5;
+}
+#innerDiv2 {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border: 5px solid black;
+    border-radius: 10px;
+    opacity: 0;
+}
