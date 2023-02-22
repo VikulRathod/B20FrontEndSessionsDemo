@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <script>
+    <!--<script>
         var v1 = 10;
         // alert(v1); // it will show a popup
         // console.log(v1); // it will print output on console
@@ -20,7 +20,7 @@
 
         var v2 = 10;
         if (v2 == 10) {
-            string v3 = "Variable inside if block";
+            var v3 = "Variable inside if block";
             // let v3 = "Variable inside if block";
             // const v3 = "Variable inside if block";
             v3 = "VHAASH";
@@ -29,9 +29,26 @@
 
         document.write('accessing outside if block: ' + v3 + '<br/>');
 
-    </script>
+    </script>-->
+
 </head>
 <body>
-    <h1>Default Document Content</h1>
+    <!--<h1 onmouseover="this.style.color = 'red';">Default Document Content</h1>-->
+    <h1 id="heading1" onmouseover="changeColor()">Default Document Content</h1>
+
+    <h1 id="heading2">Heading 2</h1>
+
+    <div id="divResult"></div>
+    <textarea id="address" rows="5"></textarea>
+
+    <!--<script>
+        function changeColor() {
+            document.getElementById('heading1').style.color = 'red';
+        }
+    </script>
+    <script>
+        document.getElementById('heading2').style.color = 'green';
+    </script>-->
+    <script src="js/default.js"></script>
 </body>
 </html>
