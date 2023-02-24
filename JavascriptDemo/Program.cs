@@ -11,12 +11,12 @@ var app = builder.Build();
 //    app.UseExceptionHandler("/Error");
 //}
 
-// app.UseDefaultFiles();
+app.UseDefaultFiles();
 
-FileServerOptions options = new FileServerOptions();
-options.DefaultFilesOptions.DefaultFileNames = new[] { "home.html" };
+//FileServerOptions options = new FileServerOptions();
+//options.DefaultFilesOptions.DefaultFileNames = new[] { "home.html" };
 
-app.UseFileServer(options);
+//app.UseFileServer(options);
 app.UseStaticFiles();
 
 //app.UseRouting();
