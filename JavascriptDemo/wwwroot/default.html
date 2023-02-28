@@ -3,18 +3,86 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <style>
+        .buttons {
+            position: absolute;
+            top: 450px;
+            width: 30px;
+            height: 25px;
+            /*display:none;*/
+        }
+    </style>
 </head>
 <body>
     <h1>Default Page Content</h1>
-
-    <div id="divTime"></div>
-    <!--<input type="button" value="Start Clock" onclick="startClock()" />
-    <input type="button" value="Stop Clock" onclick="stopClock()" />-->
+    <!--<input type="button" value="Start Slide Show" onclick="start()" />
+    <input type="button" value="Stop Slide Show" onclick="stopSlideShow()" />-->
+    <!--<div id="divTime"></div>
+    <input type="button" value="Start Clock" onclick="startClock()" />
+    <input type="button" value="Stop Clock" onclick="stopClock()" />
 
     <input type="button" value="Toggle Clock" onclick="toggleClock()" />
 
     <input type="button" value="Clear Timeout" onclick="clearAlertTimeout()" />
 
-    <script src="js/dates.js"></script>
+    <script src="js/dates.js"></script>-->
+    <br />
+    <!--<input type="button" value="<" id="prevButton" class="buttons" onclick="previousImage()"/>
+    <img src="images/vihaan1.jpg" width="80%" height="710px" id="photo" />
+    <input type="button" value=">" class="buttons" onclick="nextImage()"/>
+
+    <script src="js/imagegalary.js"></script>-->
+    Name: <input type="text" id="txt1" />
+    <p id="p1">This is paragraph<strong>*</strong></p>
+    <div id="div1">
+        Div Content
+        <br />
+        <a href="http://www.google.com">Visit google</a>
+        <span>Span Content</span>
+    </div>
+    <br />
+    <input type="button" value="Get Values" onclick="getValues()" />
+    <br /><br />
+    <input type="button" value="Set Values" onclick="setValues()" />
+    <br />
+    Name: <input type="text" id="txt2" />
+    <p id="p2"></p>
+    <div id="div2">
+    </div>
+    <a id="a1">Visit Facebook</a>
+
+    <br />
+    <table>
+        <tr>
+            <td>Select City</td>
+            <td>
+                <select id="city">
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Delhi">Delhi</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Gender
+            </td>
+            <td>
+                <input type="radio" name="Gender" id="rbMale" value="Male" /> Male
+                <input type="radio" name="Gender" id="rbFemale" value="Female" /> Female
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="Read Form Data" onclick="readForm()" />
+            </td>
+        </tr>
+    </table>
+
+    <textarea></textarea>
+    <textarea></textarea>
+    <textarea></textarea>
+
+    <script src="js/htmlelements.js"></script>
 </body>
 </html>
