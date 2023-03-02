@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .styles {
+            border: 1px solid red;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Event Bubbling Demo</h2>
+    <div id="div1" class="styles">
+        Div Content
+        <span id="span1" class="styles">
+            Span Content
+            <input type="button" id="btn1" value="Click Me!!" class="styles" />
+        </span>
+    </div>
+    <script src="js/eventbubbling.js"></script>
+</body>
+</html>

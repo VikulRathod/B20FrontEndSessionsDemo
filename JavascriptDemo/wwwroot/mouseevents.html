@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h2>Mouse Events</h2>
+
+    <!--<input type="button" id="btn" value="I am Button."
+           onmouseover="btnMouseOver()" onmouseout="btnMouseOut()"
+           onmousemove="btnMouseMove()"/>-->
+    <!--<input type="button" id="btn" value="I am Button."
+           onmousedown="btnMouseDown()" onmouseup="btnMouseUp()"
+           onclick="btnClick()" ondblclick="btnDoubleClick()"/>-->
+    <!--<input type="button" id="btn" value="I am Button."
+           onmousedown="commonFunctionForAllEvents(event)" onmouseup="commonFunctionForAllEvents(event)"
+           onclick="commonFunctionForAllEvents(event)" ondblclick="commonFunctionForAllEvents(event)" />-->
+
+    <input type="button" id="btn" value="I am Button." onclick="identityButton(event)"
+           oncontextmenu="identityButton(event)" />
+
+    <a href="http://www.google.com" onclick="return false;">Visit Google</a>
+    <br />
+    Account Number: <input type="text" />
+
+    <script src="js/mouseevents.js"></script>
+</body>
+</html>
