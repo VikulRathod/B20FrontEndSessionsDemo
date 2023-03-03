@@ -5,7 +5,7 @@
     <title></title>
 </head>
 <body>
-    <h2>Mouse Events</h2>
+    <h2 oncopy="return false;">Mouse Events</h2>
 
     <!--<input type="button" id="btn" value="I am Button."
            onmouseover="btnMouseOver()" onmouseout="btnMouseOut()"
@@ -16,9 +16,12 @@
     <!--<input type="button" id="btn" value="I am Button."
            onmousedown="commonFunctionForAllEvents(event)" onmouseup="commonFunctionForAllEvents(event)"
            onclick="commonFunctionForAllEvents(event)" ondblclick="commonFunctionForAllEvents(event)" />-->
+    <!--<input type="button" id="btn" value="I am Button."
+           onclick="identityButton(event)"
+           oncontextmenu="identityButton(event)" />-->
 
-    <input type="button" id="btn" value="I am Button." onclick="identityButton(event)"
-           oncontextmenu="identityButton(event)" />
+    <input type="button" id="btn" value="I am Button."
+           onmouseup="identityButton(event)" />
 
     <a href="http://www.google.com" onclick="return false;">Visit Google</a>
     <br />

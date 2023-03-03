@@ -14,7 +14,7 @@ var app = builder.Build();
 // app.UseDefaultFiles();
 
 FileServerOptions options = new FileServerOptions();
-options.DefaultFilesOptions.DefaultFileNames = new[] { "mouseevents.html" };
+options.DefaultFilesOptions.DefaultFileNames = new[] { "regularexpressions.html" };
 
 app.UseFileServer(options);
 app.UseStaticFiles();
