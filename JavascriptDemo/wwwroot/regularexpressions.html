@@ -3,12 +3,54 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+
 </head>
 <body>
-    <h2>regular expressions demo</h2>
+    <h2 id="heading2">regular expressions demo</h2>
 
-    Name: <input type="text" id="txtName"/>
+    <!--Name: <input type="text" id="txtName" onfocus="txtFocus()"
+                 onblur="txtBlur()" onkeyup="txtKeyUp()" />-->
+    Name: <input type="text" id="txtName" onkeyup="txtKeyUp()" />
+
+    <br />
+    <label id="lblMessage"></label>
+
+    <br />
+    Input: <input type="text" id="userInput" />
+    <input type="button" value="Click Me!!" onclick="processUserInput()" />
+    <br />
+    <label id="lblOutput"></label>
+
+    <br />
+    Mobile: <input type="text" id="mobile" />
+    <input type="button" value="Validate Mobile" onclick="validateMobile()" />
+
+    <br />
+    Email: <input type="text" id="email" />
+    <input type="button" value="Validate Email" onclick="validateEmail()" />
+    <br />
+    Password: <input type="text" id="password" />
+    <input type="button" value="Validate Password" onclick="validatePassword()" />
 
     <script src="js/regularexpressions.js"></script>
+    <script>
+        document.getElementById('heading2').style.color = 'red';
+        document.getElementById('txtName').focus();
+
+                            //var add = (a, b) => a + b;
+                            //var result = add(10, 20);
+                            //document.write(result + '<br/>');
+
+                            //var employee = {
+                            //    name: 'Vishal',
+                            //    gender: 'Male',
+                            //    display: function () {
+                            //        console.log(this.name + ' ' + this.gender);
+                            //    }
+                            //};
+
+                            //employee.display();
+
+    </script>
 </body>
 </html>
