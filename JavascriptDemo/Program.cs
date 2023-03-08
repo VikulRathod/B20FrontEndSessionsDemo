@@ -14,7 +14,7 @@ var app = builder.Build();
 // app.UseDefaultFiles();
 
 FileServerOptions options = new FileServerOptions();
-options.DefaultFilesOptions.DefaultFileNames = new[] { "regularexpressions.html" };
+options.DefaultFilesOptions.DefaultFileNames = new[] { "create.html" };
 
 app.UseFileServer(options);
 app.UseStaticFiles();

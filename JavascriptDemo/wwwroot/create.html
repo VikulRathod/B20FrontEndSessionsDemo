@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h2>Create Page</h2>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td>
+                <input type="text" id="txtName" />
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>
+                <input type="text" id="txtEmail" />
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Clear" onclick="clearForm()" /></td>
+            <td>
+                <input type="button" value="Submit" onclick="redirectConfirm()" />
+            </td>
+        </tr>
+    </table>
+    <script>
+        function clearForm() {
+            document.getElementById('txtName').value = '';
+            document.getElementById('txtEmail').value = '';
+        }
+        function redirectConfirm() {
+            var name = document.getElementById('txtName').value;
+            var email = document.getElementById('txtEmail').value;
+
+            //sessionStorage.setItem('name', name);
+            //sessionStorage.setItem('email', email);
+            localStorage.setItem('name', name);
+            localStorage.setItem('email', email);
+
+            window.open('confirm.html', '_self');
+        }
+
+        var emp = { name: 'Vikas', email: 'vikas@gmail.com' };
+        document.getElementById('txtName').value = emp.name;
+        document.getElementById('txtEmail').value = emp.email;
+
+        // json format
+        var emp = { 'name': 'Vikas', 'email': 'vikas@gmail.com' };
+    </script>
+</body>
+</html>

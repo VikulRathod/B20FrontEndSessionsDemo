@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h2>Congratulations!! Registration Successful</h2>
+    <h3>Registered with below details</h3>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td>
+                <label id="lblName"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>
+                <label id="lblEmail"></label>
+            </td>
+        </tr>
+    </table>
+    <script>
+        //document.getElementById('lblName').innerText =
+        //    sessionStorage.getItem('name');
+
+        //document.getElementById('lblEmail').innerText =
+        //    sessionStorage.getItem('email');
+
+        document.getElementById('lblName').innerText =
+            localStorage.getItem('name');
+
+        document.getElementById('lblEmail').innerText =
+            localStorage.getItem('email');
+    </script>
+</body>
+</html>
