@@ -11,7 +11,13 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Error");
 }
 
-app.UseDefaultFiles();
+// app.UseDefaultFiles();
+
+FileServerOptions files =
+    new FileServerOptions();
+files.DefaultFilesOptions.DefaultFileNames = new[] { "homea.html" };
+
+app.UseFileServer(files);
 app.UseStaticFiles();
 
 app.UseRouting();

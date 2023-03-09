@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border: 1px solid black;
+            padding: 20px;
+            /*display: none;*/
+        }
+    </style>
+    <style>
+        #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel {
+            padding: 50px;
+            /*display: none;*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Home A Page Content</h1>
+
+    <!--<input type="button" value="Click Me!!!" id="btn1" class="myClass" />
+    <input type="text" />
+
+    <table border="1">
+        <tr>
+            <td>101</td>
+            <td>Vishal</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Vivek</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Dipak</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td>Priti</td>
+        </tr>
+    </table>
+
+    <p class="red">First Paragraph</p>
+    <p class="myClass">Second Paragraph</p>
+    <p>Third Paragraph</p>
+    <div>
+        <p class="red">Fourth Paragraph (Div)</p>
+    </div>
+
+    <ul>
+        <li class="red">Vishal</li>
+        <li>Vikas</li>
+        <li>Vivek</li>
+    </ul>
+    <ul>
+        <li>Snehal</li>
+        <li>Sneha</li>
+        <li class="red">Snehlata</li>
+    </ul>-->
+    <!--Name: <input type="text" id="txt1" />
+    <input type="button" value="Submit" id="btn1" />-->
+
+    <input type="button" value="Click Me!!!" />
+    <div>
+        Div Content
+    </div>
+
+    <!--<div id="flip">Click to slide down panel</div>
+    <div id="panel">Hello world!</div>-->
+
+    <script src="lib/jquery/dist/jquery.js"></script>
+
+    <!--<script>
+        $(function () {
+            // id selector
+            //$('#btn1').click(function () {
+            //    alert('Button Clicked');
+            //});
+
+            // * - all
+            //$('*').click(function () {
+            //    alert('Button Clicked');
+            //});
+
+
+            //$('.myClass').click(function () {
+            //    alert('Button Clicked');
+            //});
+
+            //$('.myClass').click(function () {
+            //    $(this).css('color', 'red');
+            //});
+
+            //$('#btn1').click(function () {
+            //    $('p').css('color', 'red');
+            //});
+
+            //$('#btn1').click(function () {
+            //    // $('input').css('color', 'red');
+            //    // $('[type="text"]').css('color', 'red');
+            //    // $('input[type="text"]').css('color', 'red');
+            //    // $('input[type="text"],p').css('color', 'red');
+            //});
+
+            $('#btn1').click(function () {
+                // $('p:first').css('color', 'red');
+                // $('p:last').css('color', 'red');
+                // $('p:eq(1)').css('color', 'red');
+
+                // $('ul li').css('color', 'red');
+                // $('ul li:first-child').css('color', 'red');
+                // $('div p').css('color', 'red');
+                // $('.red').css('color', 'red');
+                // $('p.red').css('color', 'red');
+
+                //$('tr:odd').css('background-color', 'red');
+                //$('tr:even').css('background-color', 'yellow');
+
+                $('*').hide();
+            });
+
+            $('li').click(function () {
+                $(this).css('color', 'red');
+            });
+        });
+    </script>-->
+    <!--<script>
+        $(function () {
+            //            $('#txt1').focus();
+            $('#txt1').focus(function () {
+                $(this).css('background-color', 'green');
+            });
+            $('#txt1').blur(function () {
+                $(this).css('background-color', 'red');
+            });
+
+            //$('#btn1').mouseover(function () {
+            //    $(this).css('background-color', 'green');
+            //});
+            //$('#btn1').mouseout(function () {
+            //    $(this).css('background-color', 'red');
+            //});
+
+            //$('#btn1').hover(
+            //    function () { $(this).css('background-color', 'green'); },
+            //    function () { $(this).css('background-color', 'red'); }
+            //);
+
+            //$('#btn1').click(function () {
+            //    $(this).css('background-color', 'yellow');
+            //});
+
+            $('#btn1').on({
+                mouseover: function () {
+                    $(this).css('background-color', 'green');
+                },
+                mouseout: function () {
+                    $(this).css('background-color', 'red');
+                },
+                click: function () {
+                    $(this).css('background-color', 'yellow');
+                },
+                dblclick: function () {
+                    $(this).hide();
+                }
+            });
+
+        });
+    </script>-->
+    <!--<script>
+        $(function () {
+            //$('input[type="button"]').click(function () {
+            //    // $('div').hide();
+            //    // $('div').show();
+            //    // $('div').show(5000);
+            //    //$('div').show(2000, function () {
+            //    //    alert('Effect completed');
+            //    //});
+            //    // $('div').toggle();
+            //});
+
+            $('input[type="button"]').click(function () {
+                // $('div').fadeIn(5000);
+                //                 $('div').fadeOut();
+                //$('div').fadeOut(5000, function () {
+                //    alert('div is hidden');
+                //});
+                // $('div').fadeToggle();
+                $('div').fadeTo(1000, 0.3);
+            });
+
+            $('#flip').click(function () {
+                // $('#panel').slideDown();
+                // $('#panel').slideUp(5000);
+                $('#panel').slideToggle();
+            });
+        });
+    </script>-->
+
+    <script>
+        $(function () {
+            //$('input[type="button"]').click(function () {
+            //    //$('div').animate({
+            //    //    'margin-left': '200px',
+            //    //    'font-size': '24px',
+            //    //    'width': '200px'
+            //    //    /*,'color': 'white'*/
+            //    //});
+
+            //    $('div').animate({
+            //        'margin-left': '200px',
+            //        'width': '+=100px'
+            //    });
+            //    $('div').animate({ 'height': '+=100px' });
+            //    $('div').animate({ 'width': '-=100px' });
+            //    $('div').animate({ 'height': '-=100px' });
+            //    //$('div').animate({ 'margin-left': '0px' }, 1000,
+            //    //    function () {
+            //    //        $('div').hide();
+            //    //    });
+
+            //    $('div').animate({ 'margin-left': '0px' }, 1000, hideDiv);
+            //});
+
+            //function hideDiv() {
+            //    $('div').hide();
+            //}
+
+            $('input[type="button"]').click(function () {
+                // $('div').hide();
+                //$('div').css('color', 'white');
+                //$('div').text('New Content');
+                //$('div').animate({ 'margin-left': '50px' });
+
+                $('div')
+                    .css('color', 'white')
+                    .text('New Content')
+                    .animate({ 'margin-left': '50px' });
+            });
+        });
+    </script>
+</body>
+</html>
