@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <style>
+        .myClass {
+            color: white;
+            background-color: red;
+            border: 1px dashed black;
+        }
+    </style>
+    <script>
+        $(function () {
+            $('#btn1').click(function () {
+                var v1 = $('#txt1').val();
+                console.log(v1);
+                v1 = $('#p1').text();
+                console.log(v1);
+                v1 = $('#div1').html();
+                console.log(v1);
+            });
+
+            $('#btn2').click(function () {
+                //$('#txt2').val('Vikas');
+                //$('#p2').text('Second Paragraph');
+                //$('#div2').html('Div Content <br/> <a href="http://www.facebook.com">Visit Facebook</a>');
+
+                //$('#txt2').val($('#txt1').val());
+                //$('#p2').text($('#p1').text());
+                //$('#div2').html($('#div1').html());
+
+                var v1 = $('#div1').html();
+                $('#div1').html(v1 + 'Div Content <br/> <a href="http://www.facebook.com">Visit Facebook</a>');
+            });
+
+            $('#btn3').click(function () {
+                //var v1 = $('#a1').attr('href');
+                //console.log(v1);
+
+                //v1 = $('#a1').attr('style');
+                //console.log(v1);
+
+                //$('#a1').text('Visit VHaaSh');
+                ////$('#a1').attr('href', 'http://www.vhaashtech.com');
+                ////$('#a1').attr('target', '_blank');
+                //$('#a1').attr({
+                //    'href': 'http://www.vhaashtech.com',
+                //    'target': '_blank'
+                //});
+
+                //$('#p3').prepend('Prepended element');
+                //$('#p3').append('Appended element');
+                //$('#p3').before('Before element');
+                //$('#p3').after('After element');
+
+                // $('#div3').empty();
+                // $('#div3').remove();
+
+                // $('#btn4').removeClass('myClass');
+                // $('#btn4').addClass('myClass');
+                // $('#btn4').toggleClass('myClass');
+
+                //var v1 = $('#btn4').css('background-color');
+                //console.log(v1);
+
+                //$('#btn4').css('background-color', 'red');
+                //$('#btn4').css('color', 'white');
+                $('#btn4').css({
+                    'background-color': 'red',
+                    'color': 'white',
+                    'border' : '1px dashed black'
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    Name: <input type="text" id="txt1" />
+    <p id="p1">First Paragraph</p>
+    <div id="div1">
+        Div Content
+        <br />
+        <a href="http://www.google.com">Visit Google</a>
+        <br />
+        <span>Span Content</span>
+    </div>
+    <br />
+    <input type="button" value="Button 1" id="btn1" /> |
+    <input type="button" value="Button 2" id="btn2" />
+    <br />
+    Name: <input type="text" id="txt2" />
+    <p id="p2"></p>
+    <div id="div2"></div>
+    <br />
+    <input type="button" value="Button 3" id="btn3" />
+    <!--<a id="a1" href="http://www.vhaashtech.com" style="color:red;">Visit Vhaash</a>-->
+    <a id="a1"></a>
+    <p id="p3">Original Content</p>
+    <div id="div3">
+        Div Content
+        <br />
+        <a href="http://www.google.com">Visit Google</a>
+        <br />
+        <span>Span Content</span>
+    </div>
+    <br />
+    <input id="btn4" type="button" value="For Action" />
+
+</body>
+</html>
