@@ -67,11 +67,31 @@
 
                 //$('#btn4').css('background-color', 'red');
                 //$('#btn4').css('color', 'white');
-                $('#btn4').css({
-                    'background-color': 'red',
-                    'color': 'white',
-                    'border' : '1px dashed black'
-                });
+                //$('#btn4').css({
+                //    'background-color': 'red',
+                //    'color': 'white',
+                //    'border' : '1px dashed black'
+                //});
+            });
+
+            $('#btn4').click(function () {
+                var v1 = $('#btn5').width();
+                console.log('width(): ' + v1);
+                v1 = $('#btn5').innerWidth();
+                console.log('innerWidth(): ' + v1);
+                v1 = $('#btn5').outerWidth();
+                console.log('outerWidth(): ' + v1);
+                v1 = $('#btn5').outerWidth(true);
+                console.log('outerWidth(true): ' + v1);
+
+                v1 = $('#btn5').height();
+                console.log('height(): ' + v1);
+                v1 = $('#btn5').innerHeight();
+                console.log('innerHeight(): ' + v1);
+                v1 = $('#btn5').outerHeight();
+                console.log('outerHeight(): ' + v1);
+                v1 = $('#btn5').outerHeight(true);
+                console.log('outerHeight(true): ' + v1);
             });
         });
     </script>
@@ -107,6 +127,12 @@
     </div>
     <br />
     <input id="btn4" type="button" value="For Action" />
-
+    <br />
+    <div style="width:30%;height:200px;padding:50px;border:1px solid black;">
+        Div Content
+        <br />
+        <input type="button" value="Div Button" id="btn5"
+               style="width:120px;height:70px;border:2px solid red;padding:20px;margin:50px;" />
+    </div>
 </body>
 </html>

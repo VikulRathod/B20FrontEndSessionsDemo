@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div, div * {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script>
+        var VhT = $.noConflict();
+
+        VhT(function () {
+            VhT('#btn').click(function () {
+                // $('span').css({ 'border': '2px dashed red', 'color': 'red' });
+                // $('span').parent().css({ 'border': '2px dashed red', 'color': 'red' });
+                // $('span').parents().css({ 'border': '2px dashed red', 'color': 'red' });
+                // $('span').parentsUntil('div').css({ 'border': '2px dashed red', 'color': 'red' });
+                // $('div').css({ 'border': '2px dashed red', 'color': 'red' });
+                // $('div').children().css({ 'border': '2px dashed red', 'color': 'red' });
+                // $('div').find('li').css({ 'border': '2px dashed red', 'color': 'red' });
+
+                // $('h3').css({ 'border': '2px dashed red', 'color': 'red' });
+                // $('h3').siblings().css({ 'border': '2px dashed red', 'color': 'red' });
+                // $('h3').prev().css({ 'border': '2px dashed red', 'color': 'red' });
+                // $('h3').prevAll().css({ 'border': '2px dashed red', 'color': 'red' });
+                // $('h3').prevUntil('p').css({ 'border': '2px dashed red', 'color': 'red' });
+                // $('h3').next().css({ 'border': '2px dashed red', 'color': 'red' });
+                // $('h3').nextAll().css({ 'border': '2px dashed red', 'color': 'red' });
+                VhT('h3').nextUntil('a').css({ 'border': '2px dashed red', 'color': 'red' });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>Home C Page Content</h2>
+    <input type="button" value="Click Me!!" id="btn" /><br />
+    <!--<div style="width:500px;">
+        div (great-grandparent)
+        <ul>
+            ul (grandparent)
+            <li>
+                li (direct parent)
+                <span>span</span>
+            </li>
+        </ul>
+        <p>
+            Paragraph
+        </p>
+    </div>-->
+
+    <div style="width:500px;">
+        <p>Paragraph 1</p>
+        <a>a 1</a>
+        <h1>H 1</h1>
+        <h3>H 3</h3>
+        <h2>H 2</h2>
+        <a>a 2</a>
+        <p>Paragraph 2</p>
+    </div>
+</body>
+</html>
