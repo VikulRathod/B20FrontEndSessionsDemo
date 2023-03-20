@@ -15,7 +15,7 @@ if (!app.Environment.IsDevelopment())
 
 FileServerOptions files =
     new FileServerOptions();
-files.DefaultFilesOptions.DefaultFileNames = new[] { "homed.html" };
+files.DefaultFilesOptions.DefaultFileNames = new[] { "homef.html" };
 
 app.UseFileServer(files);
 app.UseStaticFiles();

@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <style>
+        #draggable {
+            width: 120px;
+            height: 200px;
+            padding: 0.5em;
+            float: left;
+            margin: 10px 10px 10px 0;
+        }
+
+        #droppable {
+            width: 150px;
+            height: 150px;
+            padding: 0.5em;
+            float: left;
+            margin: 10px;
+        }
+    </style>
+    <script>
+        $(function () {
+            $("#draggable ul li").draggable();
+            $("#droppable").droppable({
+                drop: function (event, ui) {
+                    $(this)
+                        .addClass("ui-state-highlight")
+                        .find("p")
+                        .html("Dropped!");
+                }
+            });
+            $("#datepicker").datepicker({
+                changeMonth: true,
+                changeYear: true,
+                dateFormat: "dd/mm/yy"
+            });
+
+            $("#dialog").dialog({
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "hide",
+                    duration: 1000
+                }
+            });
+            $("#opener").on("click", function () {
+                $("#dialog").dialog("open");
+            });
+
+            $('#btn').click(function () {
+                if ($(this).attr('value') == 'Show') {
+                    $(this).attr('value', 'Hide');
+                    $('#pwd').attr('type', 'text');
+                } else {
+                    $(this).attr('value', 'Show');
+                    $('#pwd').attr('type', 'password');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>JQuery UI Demo</h2>
+    <table>
+        <tr>
+            <td>
+                Password:
+            </td>
+            <td>
+                <input type="password" id="pwd" />
+            </td>
+            <td>
+                <input type="button" value="Show" id="btn" />
+            </td>
+        </tr>
+    </table>
+
+    <div id="dialog" title="Basic dialog">
+        <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
+        Name: <input type="text" /> <input type="button" value="Submit" />
+    </div>
+
+    <br />
+    <button id="opener">Open Dialog</button>
+    <br />
+
+    <p>Date: <input type="text" id="datepicker"></p>
+    <br />
+
+    <div id="draggable" class="ui-widget-content">
+        <h2>All Skills</h2>
+        <ul>
+            <li>SQL</li>
+            <li>C#</li>
+            <li>JAVASCRIPT</li>
+            <li>JQUERY</li>
+        </ul>
+    </div>
+
+    <div id="droppable" class="ui-widget-header">
+        <h2>Selected Skills</h2>
+    </div>
+</body>
+</html>
