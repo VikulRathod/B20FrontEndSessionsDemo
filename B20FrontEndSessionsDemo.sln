@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTMLDemo", "HTMLDemo\HTMLDe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JavascriptDemo", "JavascriptDemo\JavascriptDemo.csproj", "{B4725B86-778B-4853-ABD7-59136310538A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JQueryDemo", "JQueryDemo\JQueryDemo.csproj", "{17C88FD8-B381-4DBE-8DD6-BDBBF145ACF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JQueryDemo", "JQueryDemo\JQueryDemo.csproj", "{17C88FD8-B381-4DBE-8DD6-BDBBF145ACF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyApp", "DummyApp\DummyApp.csproj", "{58A6C350-902F-4B9A-A8E3-6B30DC800DAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{17C88FD8-B381-4DBE-8DD6-BDBBF145ACF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17C88FD8-B381-4DBE-8DD6-BDBBF145ACF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17C88FD8-B381-4DBE-8DD6-BDBBF145ACF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58A6C350-902F-4B9A-A8E3-6B30DC800DAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58A6C350-902F-4B9A-A8E3-6B30DC800DAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58A6C350-902F-4B9A-A8E3-6B30DC800DAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58A6C350-902F-4B9A-A8E3-6B30DC800DAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -64,6 +64,19 @@
                     $('#pwd').attr('type', 'password');
                 }
             });
+
+            $('#btn').tooltip();
+
+            $('#course').change(function () {
+                var course = $(this).val();
+                alert('Selected course is : ' + course);
+            });
+
+            $('ul:first li:first').css('background-color', 'yellow');
+            $('ul:first li:first').next().css('background-color', 'yellow');
+            $('ul:first li:last').css('background-color', 'yellow');
+            $('ul:first li:last').prev().css('background-color', 'yellow');
+           
         });
     </script>
 </head>
@@ -72,13 +85,50 @@
     <table>
         <tr>
             <td>
+                <ul>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                    <li>Fourth</li>
+                    <li>Fifth</li>
+                    <li>Sixth</li>
+                    <li>Seventh</li>
+                    <li>Eighth</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Number</td>
+            <td>
+                <input type="number" />
+            </td>
+        </tr>
+        <tr>
+            <td>Numeric</td>
+            <td>
+                <input type="number" inputmode="numeric" />
+            </td>
+        </tr>
+        <tr>
+            <td>Select Course:</td>
+            <td>
+                <select id="course">
+                    <option value="-1">-- Select Course --</option>
+                    <option value="Dot Net">Dot Net</option>
+                    <option value="WEB API">WEB API</option>
+                    <option value="SQL">SQL</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
                 Password:
             </td>
             <td>
                 <input type="password" id="pwd" />
             </td>
             <td>
-                <input type="button" value="Show" id="btn" />
+                <input type="button" value="Show" title="Click to show/hide password" id="btn" />
             </td>
         </tr>
     </table>
