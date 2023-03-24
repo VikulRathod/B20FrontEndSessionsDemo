@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JavascriptDemo", "Javascrip
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JQueryDemo", "JQueryDemo\JQueryDemo.csproj", "{17C88FD8-B381-4DBE-8DD6-BDBBF145ACF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyApp", "DummyApp\DummyApp.csproj", "{58A6C350-902F-4B9A-A8E3-6B30DC800DAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DummyApp", "DummyApp\DummyApp.csproj", "{58A6C350-902F-4B9A-A8E3-6B30DC800DAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootstrapDemo", "BootstrapDemo\BootstrapDemo.csproj", "{4D78CDCE-6962-4DAF-83DA-0AE26941BC4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{58A6C350-902F-4B9A-A8E3-6B30DC800DAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58A6C350-902F-4B9A-A8E3-6B30DC800DAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58A6C350-902F-4B9A-A8E3-6B30DC800DAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D78CDCE-6962-4DAF-83DA-0AE26941BC4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D78CDCE-6962-4DAF-83DA-0AE26941BC4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D78CDCE-6962-4DAF-83DA-0AE26941BC4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D78CDCE-6962-4DAF-83DA-0AE26941BC4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
