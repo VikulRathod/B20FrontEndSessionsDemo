@@ -14,7 +14,7 @@ app.UseStaticFiles();
 
 FileServerOptions files =
     new FileServerOptions();
-files.DefaultFilesOptions.DefaultFileNames = new[] { "first.html" };
+files.DefaultFilesOptions.DefaultFileNames = new[] { "homea.html" };
 
 app.UseFileServer(files);
 
