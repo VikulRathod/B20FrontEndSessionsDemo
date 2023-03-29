@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap4.css" rel="stylesheet" />
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="js/bootstrap4.bundle.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Modal Demo</h2>
+
+        <!--<a class="btn btn-success" href="/forms.html">
+            Create an Account
+        </a>-->
+        <div class="toast bg-dark text-white">
+            <div class="toast-header">
+                <strong class="mr-auto text-primary">Message Sent</strong>
+                <small class="text-muted">1 min ago</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+            </div>
+            <div class="toast-body">
+                Some text inside the toast body
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-success" data-toggle="modal"
+                data-target="#register">
+            Create an Account
+        </button> |
+        <button type="button" class="btn btn-warning"
+                data-toggle="tooltip" data-placement="right"
+                title="Direct login with registered email">
+            Already Registered?
+        </button> |
+        <button type="button" class="btn btn-info"
+                data-toggle="popover" data-placement="bottom"
+                data-trigger="focus"
+                title="Reset password using registered email">
+            Reset Password
+        </button>
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+                $('[data-toggle="popover"]').popover();
+                $('.toast').toast({ delay: 2000 });
+                $('.toast').toast('show');
+            });
+        </script>
+
+        <div class="modal" id="register">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Register with us</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="usr">Name Default:</label>
+                                        <input type="text" class="form-control" id="usr">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="usr">Photo:</label>
+                                        <input type="file" class="form-control" id="usr">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="pwd">Password:</label>
+                                        <input type="password" class="form-control" id="pwd">
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">Male
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">Female
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info" id="company"
+                                data-dismiss="modal">
+                            Submit
+                        </button>
+                        <button type="button" class="btn btn-danger"
+                                data-dismiss="modal">
+                            Close
+                        </button>
+                    </div>
+                    <!--<script>
+                        $(function () {
+                            $('#company').click(function () {
+                                window.open('/forms.html', '_self');
+                            });
+                        });
+                    </script>-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

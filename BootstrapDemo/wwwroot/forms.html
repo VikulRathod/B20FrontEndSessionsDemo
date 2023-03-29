@@ -11,147 +11,256 @@
     <div class="container">
         <h1>Forms Demo</h1>
         <!--<form>
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" placeholder="Username" />
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" placeholder="Password" />
+        </div>
+        <div class="form-group form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> Remember me
+            </label>
+        </div>
+        <input type="button" value="Log In" class="btn btn-primary" />
+    </form>
+
+    <h2>Inline Form</h2>
+    <form class="form-inline">
+        <label class="mr-2">Username</label>
+        <input type="text" class="form-control mr-2" />
+        <label class="mr-2">Password</label>
+        <input type="password" class="form-control mr-2" />
+        <input type="button" value="Log In" class="btn btn-success form-control" />
+    </form>
+
+    <form>
+        <div class="row">
+            <div class="col">
+                <input type="text" placeholder="Username" class="form-control" />
+            </div>
+            <div class="col">
+                <input type="password" placeholder="Password" class="form-control" />
+            </div>
+            <div class="col">
+                <input type="submit" value="Log In" class="btn btn-info form-control" />
+            </div>
+        </div>
+    </form>
+
+    <form class="mt-5 was-validated">
+        <div class="row">
+            <div class="col-5">
+                <input type="text" placeholder="Username" class="form-control" required />
+                <div class="invalid-feedback">Username is required</div>
+            </div>
+            <div class="col-5">
+                <input type="password" placeholder="Password" class="form-control" />
+                <div class="valid-feedback"></div>
+            </div>
+            <div class="col-2">
+                <input type="submit" value="Log In" class="btn btn-info form-control" />
+            </div>
+        </div>
+    </form>-->
+        <!--<form class="mt-5">
+        <div class="form-group">
+            <label for="usr">Name Small:</label>
+            <input type="text" class="form-control form-control-sm" id="usr">
+        </div>
+        <div class="form-group">
+            <label for="usr">Name Default:</label>
+            <input type="text" class="form-control" id="usr">
+        </div>
+        <div class="form-group">
+            <label for="usr">Name Large:</label>
+            <input type="text" class="form-control form-control-lg" id="usr">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd">
+        </div>
+        <div class="form-group">
+            <label>City: </label>
+            <select class="form-control w-50">
+                <option>-- Select City --</option>
+                <option>Mumbai</option>
+                <option>Pune</option>
+                <option>Delhi</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Address:</label>
+            <textarea class="form-control"></textarea>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">Is Indian
+            </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">NRI
+            </label>
+        </div>
+        <br />
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio">Male
+            </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio">Female
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="usr">Photo:</label>
+            <input type="file" class="form-control" id="usr">
+        </div>
+    </form>-->
+        <!--<form>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="usr">Name Default:</label>
+                    <input type="text" class="form-control" id="usr">
+                </div>
+                <div class="form-group">
+                    <label for="usr">Photo:</label>
+                    <input type="file" class="form-control" id="usr">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio">Male
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio">Female
+                    </label>
+                </div>
+            </div>
+        </div>
+    </form>-->
+        <!--<form>
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" class="form-control" />
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Username">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Full Name</span>
+            </div>
+            <input type="text" class="form-control" placeholder="First Name">
+            <input type="text" class="form-control" placeholder="Last Name">
+        </div>
+        <div class="input-group input-group-lg mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Username">
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Your Email">
+            <div class="input-group-append">
+                <span class="input-group-text">@vhaashtech.com</span>
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input type="checkbox" checked>
+                </div>
+            </div>
+            <input type="text" class="form-control" placeholder="Some text">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input type="radio">
+                </div>
+            </div>
+            <input type="text" class="form-control" placeholder="Some text">
+        </div>
+
+        <div class="input-group mb-3 w-25">
+            <input type="text" class="form-control" placeholder="Search">
+            <div class="input-group-append">
+                <button class="btn btn-success" type="submit">Go</button>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control w-75" />
+            <input type="button" value="Go" class="btn btn-info w-25" />
+        </div>
+
+        <div class="input-group mt-3 mb-3">
+            <div class="input-group-prepend">
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+                    Initial
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Mr</a>
+                    <a class="dropdown-item" href="#">Mrs</a>
+                    <a class="dropdown-item" href="#">Miss</a>
+                </div>
+            </div>
+            <input type="text" class="form-control" placeholder="Username">
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input"
+                   id="customCheck" name="example1">
+            <label class="custom-control-label" for="customCheck">
+                Check this custom checkbox
+            </label>
+        </div>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input"
+                   id="switch1">
+            <label class="custom-control-label" for="switch1">
+                Wi Fi
+            </label>
+        </div>
+        <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="customRadio" name="example1" value="customEx">
+            <label class="custom-control-label" for="customRadio">Custom radio</label>
+        </div>
+    </form>-->
+
+        <form>
             <div class="form-group">
-                <label>Name</label>
-                <input type="text" class="form-control" placeholder="Username" />
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
             </div>
             <div class="form-group">
-                <label>Password</label>
-                <input type="password" class="form-control" placeholder="Password" />
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
             <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox"> Remember me
-                </label>
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember me</label>
             </div>
-            <input type="button" value="Log In" class="btn btn-primary" />
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
 
-        <h2>Inline Form</h2>
-        <form class="form-inline">
-            <label class="mr-2">Username</label>
-            <input type="text" class="form-control mr-2" />
-            <label class="mr-2">Password</label>
-            <input type="password" class="form-control mr-2" />
-            <input type="button" value="Log In" class="btn btn-success form-control" />
-        </form>
-
-        <form>
-            <div class="row">
-                <div class="col">
-                    <input type="text" placeholder="Username" class="form-control" />
-                </div>
-                <div class="col">
-                    <input type="password" placeholder="Password" class="form-control" />
-                </div>
-                <div class="col">
-                    <input type="submit" value="Log In" class="btn btn-info form-control" />
-                </div>
-            </div>
-        </form>
-
-        <form class="mt-5 was-validated">
-            <div class="row">
-                <div class="col-5">
-                    <input type="text" placeholder="Username" class="form-control" required />
-                    <div class="invalid-feedback">Username is required</div>
-                </div>
-                <div class="col-5">
-                    <input type="password" placeholder="Password" class="form-control" />
-                    <div class="valid-feedback"></div>
-                </div>
-                <div class="col-2">
-                    <input type="submit" value="Log In" class="btn btn-info form-control" />
-                </div>
-            </div>
-        </form>-->
-        <!--<form class="mt-5">
-            <div class="form-group">
-                <label for="usr">Name Small:</label>
-                <input type="text" class="form-control form-control-sm" id="usr">
-            </div>
-            <div class="form-group">
-                <label for="usr">Name Default:</label>
-                <input type="text" class="form-control" id="usr">
-            </div>
-            <div class="form-group">
-                <label for="usr">Name Large:</label>
-                <input type="text" class="form-control form-control-lg" id="usr">
-            </div>
-            <div class="form-group">
-                <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd">
-            </div>
-            <div class="form-group">
-                <label>City: </label>
-                <select class="form-control w-50">
-                    <option>-- Select City --</option>
-                    <option>Mumbai</option>
-                    <option>Pune</option>
-                    <option>Delhi</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>Address:</label>
-                <textarea class="form-control"></textarea>
-            </div>
-            <div class="form-check-inline">
-                <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value="">Is Indian
-                </label>
-            </div>
-            <div class="form-check-inline">
-                <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value="">NRI
-                </label>
-            </div>
-            <br />
-            <div class="form-check-inline">
-                <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optradio">Male
-                </label>
-            </div>
-            <div class="form-check-inline">
-                <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optradio">Female
-                </label>
-            </div>
-            <div class="form-group">
-                <label for="usr">Photo:</label>
-                <input type="file" class="form-control" id="usr">
-            </div>
-        </form>-->
-
-        <form>
-            <div class="row">
-                <div class="col">
-                    <div class="form-group">
-                        <label for="usr">Name Default:</label>
-                        <input type="text" class="form-control" id="usr">
-                    </div>
-                    <div class="form-group">
-                        <label for="usr">Photo:</label>
-                        <input type="file" class="form-control" id="usr">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="form-group">
-                        <label for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd">
-                    </div>
-                    <div class="form-check-inline">
-                        <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optradio">Male
-                        </label>
-                    </div>
-                    <div class="form-check-inline">
-                        <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optradio">Female
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </form>
     </div>
 </body>
 </html>

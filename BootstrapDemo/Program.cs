@@ -14,7 +14,7 @@ app.UseStaticFiles();
 
 FileServerOptions files =
     new FileServerOptions();
-files.DefaultFilesOptions.DefaultFileNames = new[] { "forms.html" };
+files.DefaultFilesOptions.DefaultFileNames = new[] { "modal.html" };
 
 app.UseFileServer(files);
 
