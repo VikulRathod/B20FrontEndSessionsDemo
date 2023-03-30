@@ -14,7 +14,7 @@ app.UseStaticFiles();
 
 FileServerOptions files =
     new FileServerOptions();
-files.DefaultFilesOptions.DefaultFileNames = new[] { "modal.html" };
+files.DefaultFilesOptions.DefaultFileNames = new[] { "login.html" };
 
 app.UseFileServer(files);
 
